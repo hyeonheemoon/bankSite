@@ -1,0 +1,644 @@
+@charset "UTF-8";
+/************default setting**********/
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+body {
+  font-family: "Pretendard", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.wrap {
+  width: 1070px;
+  margin: 0 auto;
+}
+
+.title_box {
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.sub_title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.detail {
+  font-size: 15px;
+}
+.detail a {
+  color: #777777;
+}
+
+/******** header_util *************/
+.util_header_outer {
+  width: 100%;
+  height: 40px;
+}
+
+.util_header {
+  height: 40px;
+  width: 1070px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.util_header ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.util_header .util_gnb a {
+  color: #777777;
+}
+
+/******** header*************/
+.header_outer {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #E2E2E2;
+}
+.header_outer.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 999;
+}
+
+.header {
+  width: 1070px;
+  margin: 0 auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.header .logo_box {
+  width: 140px;
+  height: 38px;
+  margin-right: 35px;
+}
+
+.header_gnb_box {
+  width: 925px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_gnb_box .header_gnb {
+  display: flex;
+  gap: 20px;
+}
+.header_gnb_box .header_gnb li:hover a {
+  color: #0046FF;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.header_gnb_box .menu_box {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+.header_gnb_box .menu_box div {
+  cursor: pointer;
+}
+.header_gnb_box .menu_box i:hover {
+  color: #0046FF;
+  transition: all 0.3s;
+}
+
+.close {
+  display: none;
+}
+.close i {
+  font-size: 20px;
+}
+.close i:hover {
+  color: #0046FF;
+  transition: all 0.3s;
+}
+
+/************search_box************/
+.search_box_area {
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  pointer-events: none;
+}
+.search_box_area input {
+  width: 300px;
+  height: 28px;
+  border-radius: 20px;
+  border: 2px solid #4176d8;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+.search_box_area i {
+  position: absolute;
+  right: 15px;
+  transform: translateY(30%);
+  color: #0046FF;
+  cursor: pointer;
+}
+.search_box_area.open {
+  width: 300px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/************gnb_sub************/
+.gnb_sub_menu_area {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+}
+
+.gnb_sub_menu {
+  min-height: 280px;
+  width: 1070px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 10px;
+  padding: 30px 0;
+  background-color: rgb(255, 255, 255);
+  display: none;
+}
+.gnb_sub_menu ul {
+  flex-shrink: 0;
+  flex-basis: 188px;
+  border-right: 1px solid #E2E2E2;
+  padding-inline: 8px;
+}
+.gnb_sub_menu ul .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.gnb_sub_menu ul li {
+  height: 26px;
+  cursor: pointer;
+}
+.gnb_sub_menu ul li a {
+  color: #777777;
+}
+.gnb_sub_menu ul li:hover a {
+  font-weight: 600;
+  color: #0046FF;
+}
+
+/******** visual_main *************/
+.mainSwiper {
+  width: 1270px;
+  margin: 0 auto;
+  position: relative;
+}
+.mainSwiper .swiper-pagination {
+  position: absolute;
+  bottom: 30px !important;
+}
+
+.mainSwiper .swiper-slide {
+  height: 344px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd;
+  font-size: 24px;
+}
+
+/******** issue_content *************/
+.issue_frame {
+  width: 100%;
+  height: 220px;
+  background-color: #e5f1fd;
+  margin-bottom: 40px;
+}
+
+.issue_contents {
+  width: 1070px;
+  margin: 0 auto;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tab_area {
+  margin-right: 79px;
+}
+.tab_area .issue_title {
+  font-weight: 600;
+  line-height: 143%;
+  margin-bottom: 26px;
+}
+.tab_area .tab_box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.tab_area .tab_box button {
+  width: 90px;
+  height: 33px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #DADADA;
+  color: #777777;
+  border: none;
+}
+.tab_area .tab_box button.active {
+  background-color: #0046FF;
+  color: white;
+  font-weight: bold;
+}
+
+.issue_card_area {
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.issue_card {
+  width: 170px;
+  height: 160px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+.issue_card:hover {
+  background-color: #EEF8FF;
+  box-shadow: 2px 2px 8px rgba(97, 90, 192, 0.25);
+}
+.issue_card .icon_img {
+  width: 38px;
+  height: 38px;
+  margin-bottom: 5px;
+}
+.issue_card .issue_txt_box .issue_menu_title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.issue_card .issue_txt_box .issue_menu_info {
+  width: 120px;
+  font-size: 15px;
+  color: #777777;
+}
+
+/******** 신한은행 금융상품 *************/
+.bp_area {
+  margin-bottom: 40px;
+}
+
+.bp_card_list {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #1f8bce;
+  border-radius: 60px 5px;
+  padding-inline: 80px;
+}
+
+.bp_card_item {
+  width: 140px;
+  height: 93px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: transform 0.25s ease;
+  cursor: pointer;
+}
+.bp_card_item:hover {
+  background-color: #369edf;
+  transition: all 0.3s;
+  transform: translateY(-4px);
+  box-shadow: 2px 2px 8px rgba(102, 102, 102, 0.25);
+}
+.bp_card_item a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+.bp_card_item a .bp_img_box {
+  width: 36px;
+}
+
+/******** 신한은행 추천상품 *************/
+.reco_pb_area {
+  margin-bottom: 40px;
+}
+
+.bg01 {
+  background-color: #DEEEFA;
+}
+
+.bg02 {
+  background-color: #FFEDC3;
+}
+
+.bg03 {
+  background-color: #FFE4EB;
+}
+
+.reco_pb_list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reco_pb_item {
+  width: 260px;
+  height: 210px;
+  border-radius: 20px;
+  padding: 25px;
+  position: relative;
+  cursor: pointer;
+}
+.reco_pb_item:hover {
+  box-shadow: 2px 2px 8px rgba(102, 102, 102, 0.25);
+}
+
+.reco_img_box {
+  width: 131px;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+
+.reco_txt_box .reco_title01 {
+  font-size: 14px;
+  color: #777777;
+  margin-bottom: 5px;
+}
+.reco_txt_box .reco_title02 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.reco_txt_box .reco_info {
+  line-height: 143%;
+  font-weight: 400;
+}
+
+/************이벤트영역************/
+.eventswiper {
+  width: 1070px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 40px;
+}
+.eventswiper .swiper-pagination {
+  display: none;
+}
+.eventswiper .swiper-button-prev,
+.eventswiper .swiper-button-next {
+  display: none;
+}
+
+.eventswiper .swiper-slide {
+  width: 350px;
+  height: 154px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.eventswiper .swiper-slide:hover {
+  box-shadow: 2px 2px 8px rgba(102, 102, 102, 0.25);
+  transition: all 0.3s;
+  transform: translateY(-4px);
+}
+
+.swiper_slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/************공지사항 영역************/
+.notice_area {
+  background-color: #e5f1fd;
+  padding: 57px 0;
+}
+
+.notice_frame {
+  width: 1070px;
+  margin: 0 auto;
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+}
+
+.notice_list li {
+  height: 32px;
+}
+.notice_list li a {
+  display: flex;
+  justify-content: space-between;
+}
+.notice_list li a .notice_title {
+  width: 330px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-right: 81px;
+  font-weight: 600;
+}
+.notice_list li a .notice_title:hover {
+  text-decoration: underline;
+}
+.notice_list li a .notice_date {
+  font-size: 14px;
+  color: #777777;
+}
+
+.notice_box02 .tab_box button {
+  width: 127px;
+  height: 33px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: #DADADA;
+  color: #777777;
+  border: none;
+  cursor: pointer;
+}
+.notice_box02 .tab_box button.active {
+  background-color: #0046FF;
+  color: white;
+  font-weight: 600;
+}
+
+/******** footer_top *************/
+.footer_top_outer {
+  height: 60px;
+  border-top: 1px solid #E2E2E2;
+}
+
+.footer_top {
+  height: 60px;
+  width: 1070px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_top .logo_box {
+  width: 107px;
+}
+.footer_top .option_frame {
+  display: flex;
+  gap: 10px;
+}
+
+.option_frame div select {
+  display: block;
+  width: 204px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid #E2E2E2;
+  padding-left: 20px;
+  color: #939393;
+}
+
+/******** footer_top *************/
+.footer_outer {
+  width: 100%;
+  border: 1px solid #E2E2E2;
+  padding: 30px 0;
+}
+
+.footer {
+  width: 1070px;
+  margin: 0 auto;
+}
+.footer .footer_gnb_frame {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer_gnb_frame p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer .footer_gnb {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer .footer_gnb a {
+  color: #818181;
+}
+.footer .footer_gnb li:hover a {
+  color: black;
+}
+
+.footer_gnb_frame {
+  margin-bottom: 30px;
+}
+
+.gnb_list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.gnb_list li {
+  padding-inline: 5px;
+  border-right: 1px solid #E2E2E2;
+}
+.gnb_list li a {
+  color: #818181;
+  padding-right: 5px;
+}
+.gnb_list li:hover a {
+  color: black;
+}
+.gnb_list li:last-child {
+  border-right: none;
+}
+
+.copy {
+  color: #777;
+}
+
+/******** aside *************/
+.all_menu_area {
+  width: 100%;
+  height: calc(100vh - 101px);
+  position: fixed;
+  top: 101px;
+  left: 0;
+  background-color: white;
+  z-index: 9999;
+  overflow-y: scroll;
+  transform: translateX(100%);
+  transition: transform 0.6s ease;
+  pointer-events: none;
+}
+.all_menu_area.fixed {
+  top: 60px;
+}
+
+.all_menu_area.open {
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.all_menu_area .all_menu_box {
+  width: 1070px;
+  margin: 0 auto;
+}
+.all_menu_area .all_menu_box .gnb_sub_menu {
+  display: flex !important;
+}
+.all_menu_area .all_menu_box .gnb_sub_menu .gnb_sub_menu_list .title {
+  padding-left: 12px;
+  position: relative;
+}
+.all_menu_area .all_menu_box .gnb_sub_menu .gnb_sub_menu_list .title::before {
+  content: "";
+  width: 4px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3660d6;
+}/*# sourceMappingURL=main.css.map */

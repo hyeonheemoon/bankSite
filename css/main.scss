@@ -1,0 +1,753 @@
+/************default setting**********/
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+body {
+  font-family: 'Pretendard', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.wrap {
+  width: 1070px;
+  margin: 0 auto;
+}
+
+$pointcolor: #0046FF;
+$tabcolor: #DADADA;
+$tabtextcolor: #777777;
+$bordercolor: #E2E2E2;
+$framebg: #f6f6f6;
+$hoverbox: #EEF8FF;
+
+@mixin center {
+  width: 1070px;
+  margin: 0 auto;
+}
+
+.title_box {
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.sub_title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.detail {
+  font-size: 15px;
+
+  a {
+    color: $tabtextcolor;
+  }
+}
+
+@mixin margin {
+  margin-bottom: 40px;
+}
+
+@mixin shadow {
+  box-shadow: 2px 2px 8px rgba($color: #666666, $alpha: 0.25);
+}
+
+/******** header_util *************/
+.util_header_outer {
+  width: 100%;
+  height: 40px;
+}
+
+.util_header {
+  height: 40px;
+  @include center();
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .util_gnb {
+    a {
+      color: $tabtextcolor;
+    }
+  }
+}
+
+/******** header*************/
+.header_outer {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid $bordercolor;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 999;
+  }
+}
+
+.header {
+  @include center();
+  height: 60px;
+  display: flex;
+  align-items: center;
+
+  .logo_box {
+    width: 140px;
+    height: 38px;
+    margin-right: 35px;
+  }
+}
+
+.header_gnb_box {
+  width: calc(1070px - 145px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .header_gnb {
+    display: flex;
+    gap: 20px;
+
+    li {
+      &:hover {
+        a {
+          color: $pointcolor;
+          font-weight: 500;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+
+  .menu_box {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+
+    div {
+      cursor: pointer;
+    }
+
+    i {
+      &:hover {
+        color: $pointcolor;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+
+.close{
+  display: none;
+  i{
+    font-size: 20px;
+     &:hover {
+        color: $pointcolor;
+        transition: all 0.3s;
+      }
+  }
+}
+
+/************search_box************/
+.search_box_area {
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  pointer-events: none;
+
+
+  input {
+    width: 300px;
+    height: 28px;
+    border-radius: 20px;
+    border: 2px solid #4176d8;
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+
+  i {
+    position: absolute;
+    right: 15px;
+    transform: translateY(30%);
+    color: #0046FF;
+    cursor: pointer;
+  }
+
+  &.open {
+    width: 300px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+
+/************gnb_sub************/
+
+.gnb_sub_menu_area {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+}
+
+.gnb_sub_menu {
+  min-height: 280px;
+  @include center();
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 10px;
+  padding: 30px 0;
+  background-color: rgb(255, 255, 255);
+  display: none;
+
+  ul {
+    flex-shrink: 0;
+    flex-basis: 188px;
+    border-right: 1px solid $bordercolor;
+    padding-inline: 8px;
+
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 7px;
+    }
+
+    li {
+      height: 26px;
+      cursor: pointer;
+
+      a {
+        color: $tabtextcolor;
+      }
+
+      &:hover {
+        a {
+          font-weight: 600;
+          color: $pointcolor;
+        }
+      }
+    }
+  }
+}
+
+/******** visual_main *************/
+.mainSwiper {
+  width: 1270px;
+  margin: 0 auto;
+  position: relative;
+
+  .swiper-pagination {
+    position: absolute;
+    bottom: 30px !important;
+  }
+}
+
+.mainSwiper .swiper-slide {
+  height: 344px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd;
+  font-size: 24px;
+}
+
+/******** issue_content *************/
+.issue_frame {
+  width: 100%;
+  height: 220px;
+  background-color: #e5f1fd;
+  @include margin();
+}
+
+.issue_contents {
+  @include center();
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tab_area {
+  margin-right: 79px;
+
+  .issue_title {
+    font-weight: 600;
+    line-height: 143%;
+    margin-bottom: 26px;
+  }
+
+  .tab_box {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    button {
+      width: 90px;
+      height: 33px;
+      border-radius: 20px;
+      cursor: pointer;
+      background-color: $tabcolor;
+      color: $tabtextcolor;
+      border: none;
+
+      &.active {
+        background-color: $pointcolor;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.issue_card_area {
+  display: none;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.issue_card {
+  width: 170px;
+  height: 160px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #EEF8FF;
+    box-shadow: 2px 2px 8px rgba($color: #615ac0, $alpha: 0.25);
+  }
+
+  .icon_img {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 5px;
+  }
+
+  .issue_txt_box {
+    .issue_menu_title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .issue_menu_info {
+      width: 120px;
+      font-size: 15px;
+      color: $tabtextcolor;
+
+    }
+  }
+}
+
+/******** 신한은행 금융상품 *************/
+.bp_area {
+  @include margin();
+}
+
+.bp_card_list {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #1f8bce;
+  border-radius: 60px 5px;
+  padding-inline: 80px;
+}
+
+.bp_card_item {
+  width: 140px;
+  height: 93px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition:
+    transform 0.25s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #369edf;
+    transition: all 0.3s;
+    transform: translateY(-4px);
+    @include shadow();
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+
+    .bp_img_box {
+      width: 36px;
+    }
+  }
+}
+
+/******** 신한은행 추천상품 *************/
+.reco_pb_area {
+  @include margin();
+}
+
+.bg01 {
+  background-color: #DEEEFA;
+}
+
+.bg02 {
+  background-color: #FFEDC3;
+}
+
+.bg03 {
+  background-color: #FFE4EB;
+}
+
+.reco_pb_list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reco_pb_item {
+  width: 260px;
+  height: 210px;
+  border-radius: 20px;
+  padding: 25px;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    @include shadow();
+  }
+}
+
+.reco_img_box {
+  width: 131px;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+
+.reco_txt_box {
+  .reco_title01 {
+    font-size: 14px;
+    color: $tabtextcolor;
+    margin-bottom: 5px;
+  }
+
+  .reco_title02 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .reco_info {
+    line-height: 143%;
+    font-weight: 400;
+  }
+}
+
+/************이벤트영역************/
+.eventswiper {
+  width: 1070px;
+  margin: 0 auto;
+  position: relative;
+  @include margin();
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}
+
+.eventswiper .swiper-slide {
+  width: 350px;
+  height: 154px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+  &:hover {
+    @include shadow();
+    transition: all 0.3s;
+    transform: translateY(-4px);
+  }
+}
+
+.swiper_slide {
+  img {
+    object-fit: cover;
+  }
+}
+
+/************공지사항 영역************/
+.notice_area {
+  background-color: #e5f1fd;
+  padding: 57px 0;
+}
+
+.notice_frame {
+  @include center();
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+}
+
+.notice_list {
+  li {
+    height: 32px;
+
+    a {
+      display: flex;
+      justify-content: space-between;
+
+      .notice_title {
+        width: 330px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-right: 81px;
+        font-weight: 600;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .notice_date {
+        font-size: 14px;
+        color: $tabtextcolor;
+      }
+    }
+  }
+}
+
+.notice_box02 {
+  .tab_box {
+    button {
+      width: 127px;
+      height: 33px;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      background-color: $tabcolor;
+      color: $tabtextcolor;
+      border: none;
+      cursor: pointer;
+
+      &.active {
+        background-color: $pointcolor;
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/******** footer_top *************/
+
+.footer_top_outer {
+  height: 60px;
+  border-top: 1px solid $bordercolor;
+}
+
+.footer_top {
+  height: 60px;
+  @include center();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo_box {
+    width: 107px;
+  }
+
+  .option_frame {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.option_frame {
+  div {
+    select {
+      display: block;
+      width: 204px;
+      height: 40px;
+      background-color: white;
+      border: 1px solid $bordercolor;
+      padding-left: 20px;
+      color: #939393;
+    }
+  }
+}
+
+/******** footer_top *************/
+.footer_outer {
+  width: 100%;
+  border: 1px solid $bordercolor;
+  padding: 30px 0;
+}
+
+.footer {
+  @include center();
+
+  .footer_gnb_frame {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+  .footer_gnb {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    a {
+      color: #818181;
+    }
+
+    li {
+      &:hover {
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.footer_gnb_frame {
+  margin-bottom: 30px;
+}
+
+.gnb_list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+
+  li {
+    padding-inline: 5px;
+    border-right: 1px solid $bordercolor;
+
+    a {
+      color: #818181;
+      padding-right: 5px;
+    }
+
+    &:hover {
+      a {
+        color: black;
+      }
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.copy {
+  color: #777;
+}
+
+/******** aside *************/
+.all_menu_area{
+  width: 100%;
+  height: calc(100vh - 101px);
+  position: fixed;
+  top: 101px;
+  left: 0;
+  background-color: white;
+  z-index: 9999;
+  overflow-y: scroll;
+   transform: translateX(100%);
+  transition: transform 0.6s ease;
+  pointer-events: none;
+  &.fixed{
+    top:60px;
+  }
+}
+
+.all_menu_area.open {
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.all_menu_area{
+  .all_menu_box{
+    width: 1070px;
+    margin: 0 auto;
+    .gnb_sub_menu{
+      display: flex !important;
+      .gnb_sub_menu_list{
+        .title{
+        padding-left: 12px;
+        position: relative;
+        &::before{
+          content: '';
+          width: 4px;
+          height: 22px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #3660d6;
+        }
+        }
+      }
+    }
+  }
+}
