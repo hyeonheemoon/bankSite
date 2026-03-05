@@ -123,6 +123,14 @@ img {
   gap: 20px;
   font-size: 18px;
 }
+.header_gnb_box .menu_box button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.header_gnb_box .menu_box button i {
+  font-size: 20px;
+}
 .header_gnb_box .menu_box div {
   cursor: pointer;
 }
@@ -130,14 +138,13 @@ img {
   color: #0046FF;
   transition: all 0.3s;
 }
-
-.close {
+.header_gnb_box .menu_box .close {
   display: none;
 }
-.close i {
-  font-size: 20px;
+.header_gnb_box .menu_box .close i {
+  font-size: 24px;
 }
-.close i:hover {
+.header_gnb_box .menu_box .close i:hover {
   color: #0046FF;
   transition: all 0.3s;
 }

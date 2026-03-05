@@ -40,7 +40,9 @@
   <div class="header_outer">
     <header class="header">
       <div class="logo_box">
-        <img src="./images/logo.png" alt="신한은행 로고">
+        <a href="./index.html">
+          <img src="./images/logo.png" alt="신한은행 로고">
+        </a>
       </div><!--logo_box-->
       <div class="header_gnb_box">
         <ul class="header_gnb">
@@ -53,627 +55,502 @@
         </ul><!--header_gnb-->
         <div class="menu_box">
           <div class="search_box_area">
-            <input type="search" placeholder="검색어를 입력하세요.">
+            <input type="search" placeholder="검색어를 입력하세요." aria-label="검색">
             <i class="fa-solid fa-magnifying-glass"></i>
           </div><!--search_box_area-->
-          <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div><!--검색-->
-          <div class="menu">
-            <i class="fa-solid fa-bars"></i>
-          </div><!--햄버거버튼-->
-          <div class="close">
-            <i class="fa-solid fa-xmark"></i>
-          </div>
+          <button class="search" type="button" aria-label="검색열기">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          </button><!--검색-->
+          <button class="menu" type="button" aria-label="햄버거버튼">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </button><!--햄버거버튼-->
+          <button class="close" type="button" aria-label="전체닫기">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </button>
         </div><!--메뉴박스-->
       </div>
     </header>
 
-      <div class="gnb_sub_menu_area">
-    <div class="gnb_sub_menu">
-      <ul class="gnb_sub_menu_list">
-        <li class="title">계좌조회</li>
-        <li><a href="#!">예금/신탁</a></li>
-        <li><a href="#!">ISA</a></li>
-        <li><a href="#!">대출</a></li>
-        <li><a href="#!">펀드</a></li>
-        <li><a href="#!">외환</a></li>
-        <li><a href="#!">퇴직연금</a></li>
-        <li><a href="#!">골드/실버</a></li>
-        <li><a href="#!">보함/노란우산공제</a></li>
-        <li><a href="#!">전체계좌</a></li>
-      </ul><!--계좌조회-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">기타조회</li>
-        <li><a href="#!">휴면예금조회</a></li>
-        <li><a href="#!">기일도래계좌조회</a></li>
-        <li><a href="#!">자기앞수표조회</a></li>
-        <li><a href="#!">발행수표조회</a></li>
-        <li><a href="#!">보관어음조회</a></li>
-        <li><a href="#!">퇴직연금</a></li>
-        <li><a href="#!">보이는 스마일콜</a></li>
-      </ul><!--기타조회-->
-    </div><!--조회-->
+    <div class="gnb_sub_menu_area">
+      <div class="gnb_sub_menu">
+        <ul class="gnb_sub_menu_list">
+          <li class="title">계좌조회</li>
+          <li><a href="#!">예금/신탁</a></li>
+          <li><a href="#!">ISA</a></li>
+          <li><a href="#!">대출</a></li>
+          <li><a href="#!">펀드</a></li>
+          <li><a href="#!">외환</a></li>
+          <li><a href="#!">퇴직연금</a></li>
+          <li><a href="#!">골드/실버</a></li>
+          <li><a href="#!">보함/노란우산공제</a></li>
+          <li><a href="#!">전체계좌</a></li>
+        </ul><!--계좌조회-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">기타조회</li>
+          <li><a href="#!">휴면예금조회</a></li>
+          <li><a href="#!">기일도래계좌조회</a></li>
+          <li><a href="#!">자기앞수표조회</a></li>
+          <li><a href="#!">발행수표조회</a></li>
+          <li><a href="#!">보관어음조회</a></li>
+          <li><a href="#!">퇴직연금</a></li>
+          <li><a href="#!">보이는 스마일콜</a></li>
+        </ul><!--기타조회-->
+      </div><!--조회-->
 
-    <div class="gnb_sub_menu">
-      <ul class="gnb_sub_menu_list">
-        <li class="title">계좌이체</li>
-        <li><a href="#!">다른금융 계좌이체</a></li>
-        <li><a href="#!">다계좌이체</a></li>
-        <li><a href="#!">잔액 모으기</a></li>
-        <li><a href="#!">잔액 모으기 예약</a></li>
-        <li><a href="#!">잔액 모으기 예약 관리</a></li>
-        <li><a href="#!">퇴직급여 이체</a></li>
-        <li><a href="#!">계좌종합관리 이체</a></li>
-      </ul><!--계좌이체-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">이체결과조회</li>
-        <li><a href="#!">계좌이체결과 조회</a></li>
-        <li><a href="#!">다른금융계좌 이체결과조회</a></li>
-        <li><a href="#!">잔액 모으기 예약 결과조회</a></li>
-        <li><a href="#!">전화승인결과 조회 </a></li>
-        <li><a href="#!">계좌종합관리 이체결과 조회 </a></li>
-      </ul><!--이체결과조회-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">자동이체</li>
-        <li><a href="#!">자동이체내역 조회/해지/변경</a></li>
-        <li><a href="#!">자동이체 등록</a></li>
-        <li><a href="#!">자동이체결과확인증</a></li>
-      </ul><!--자동이체-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">에스크로 이체</li>
-        <li><a href="#!">에스크로 이체</a></li>
-        <li><a href="#!">에스크로 이체결과 조회</a></li>
-      </ul><!--에스크로 이체-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">자동이체 서비스</li>
-        <li><a href="#!">자동이체통합관리 서비스</a></li>
-        <li><a href="#!">자동납부 계좌조회 </a></li>
-        <li><a href="#!">출급계좌 변경</a></li>
-        <li><a href="#!">자동납부 변경신청결과조회 </a></li>
-        <li><a href="#!">자동송금 계좌조회</a></li>
-        <li><a href="#!">자동송금 변경신청결과조회</a></li>
-      </ul><!--자동이체 서비스-->
-    </div><!--이체-->
+      <div class="gnb_sub_menu">
+        <ul class="gnb_sub_menu_list">
+          <li class="title">계좌이체</li>
+          <li><a href="#!">다른금융 계좌이체</a></li>
+          <li><a href="#!">다계좌이체</a></li>
+          <li><a href="#!">잔액 모으기</a></li>
+          <li><a href="#!">잔액 모으기 예약</a></li>
+          <li><a href="#!">잔액 모으기 예약 관리</a></li>
+          <li><a href="#!">퇴직급여 이체</a></li>
+          <li><a href="#!">계좌종합관리 이체</a></li>
+        </ul><!--계좌이체-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">이체결과조회</li>
+          <li><a href="#!">계좌이체결과 조회</a></li>
+          <li><a href="#!">다른금융계좌 이체결과조회</a></li>
+          <li><a href="#!">잔액 모으기 예약 결과조회</a></li>
+          <li><a href="#!">전화승인결과 조회 </a></li>
+          <li><a href="#!">계좌종합관리 이체결과 조회 </a></li>
+        </ul><!--이체결과조회-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">자동이체</li>
+          <li><a href="#!">자동이체내역 조회/해지/변경</a></li>
+          <li><a href="#!">자동이체 등록</a></li>
+          <li><a href="#!">자동이체결과확인증</a></li>
+        </ul><!--자동이체-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">에스크로 이체</li>
+          <li><a href="#!">에스크로 이체</a></li>
+          <li><a href="#!">에스크로 이체결과 조회</a></li>
+        </ul><!--에스크로 이체-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">자동이체 서비스</li>
+          <li><a href="#!">자동이체통합관리 서비스</a></li>
+          <li><a href="#!">자동납부 계좌조회 </a></li>
+          <li><a href="#!">출급계좌 변경</a></li>
+          <li><a href="#!">자동납부 변경신청결과조회 </a></li>
+          <li><a href="#!">자동송금 계좌조회</a></li>
+          <li><a href="#!">자동송금 변경신청결과조회</a></li>
+        </ul><!--자동이체 서비스-->
+      </div><!--이체-->
 
-    <div class="gnb_sub_menu">
-      <ul class="gnb_sub_menu_list">
-        <li class="title">MY 공과금</li>
-        <li><a href="#!">공과금 등록/관리</a></li>
-        <li><a href="#!">공과금 조회/납부</a></li>
-        <li><a href="#!">납부확인증 보관함</a></li>
-        <li><a href="#!">예약납부등록</a></li>
-        <li><a href="#!">예약납부조회/취소</a></li>
-      </ul><!--MY공과금-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">지로/생활요금</li>
-        <li><a href="#!">생활요금 납부</a></li>
-        <li><a href="#!">납부내역 조회/취소</a></li>
-        <li><a href="#!">자동납부 등록/해지</a></li>
-      </ul><!--지로/생활요금-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">지방세</li>
-        <li><a href="#!">지방세 납부</a></li>
-        <li><a href="#!">세외수입납부</a></li>
-        <li><a href="#!">기타세입금</a></li>
-        <li><a href="#!">환경개선부담금</a></li>
-        <li><a href="#!">납부내역조회</a></li>
-      </ul><!--지방세-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">4대보험료</li>
-        <li><a href="#!">통합사회보험료납부</a></li>
-        <li><a href="#!">산재보험료납부</a></li>
-        <li><a href="#!">고용보험료납부</a></li>
-        <li><a href="#!">고용/산재자진납부</a></li>
-        <li><a href="#!">납부내역조회</a></li>
-      </ul><!--4대보험료-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">국세</li>
-        <li><a href="#!">관세</a></li>
-        <li><a href="#!">납부내역조회</a></li>
-      </ul><!--국세/관세-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">범칙/벌과금 납부</li>
-        <li><a href="#!">납부내역 조회</a></li>
-      </ul><!--범칙/벌과금-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">대학등록금</li>
-        <li><a href="#!">등록금 납부</a></li>
-        <li><a href="#!">납부조회/취소 </a></li>
-      </ul><!--대학등록금-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">법원업무</li>
-        <li><a href="#!">공탁금 납부</a></li>
-        <li><a href="#!">송달료 납부</a></li>
-        <li><a href="#!">법원/보관금 납부</a></li>
-        <li><a href="#!">집행관보관금 납부</a></li>
-        <li><a href="#!">등기신청수수료 납부</a></li>
-        <li><a href="#!">소송등인지대 납부</a></li>
-        <li><a href="#!">납부내역조회</a></li>
-      </ul><!--법원업무-->
-    </div><!--공과금-->
+      <div class="gnb_sub_menu">
+        <ul class="gnb_sub_menu_list">
+          <li class="title">MY 공과금</li>
+          <li><a href="#!">공과금 등록/관리</a></li>
+          <li><a href="#!">공과금 조회/납부</a></li>
+          <li><a href="#!">납부확인증 보관함</a></li>
+          <li><a href="#!">예약납부등록</a></li>
+          <li><a href="#!">예약납부조회/취소</a></li>
+        </ul><!--MY공과금-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">지로/생활요금</li>
+          <li><a href="#!">생활요금 납부</a></li>
+          <li><a href="#!">납부내역 조회/취소</a></li>
+          <li><a href="#!">자동납부 등록/해지</a></li>
+        </ul><!--지로/생활요금-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">지방세</li>
+          <li><a href="#!">지방세 납부</a></li>
+          <li><a href="#!">세외수입납부</a></li>
+          <li><a href="#!">기타세입금</a></li>
+          <li><a href="#!">환경개선부담금</a></li>
+          <li><a href="#!">납부내역조회</a></li>
+        </ul><!--지방세-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">4대보험료</li>
+          <li><a href="#!">통합사회보험료납부</a></li>
+          <li><a href="#!">산재보험료납부</a></li>
+          <li><a href="#!">고용보험료납부</a></li>
+          <li><a href="#!">고용/산재자진납부</a></li>
+          <li><a href="#!">납부내역조회</a></li>
+        </ul><!--4대보험료-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">국세</li>
+          <li><a href="#!">관세</a></li>
+          <li><a href="#!">납부내역조회</a></li>
+        </ul><!--국세/관세-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">범칙/벌과금 납부</li>
+          <li><a href="#!">납부내역 조회</a></li>
+        </ul><!--범칙/벌과금-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">대학등록금</li>
+          <li><a href="#!">등록금 납부</a></li>
+          <li><a href="#!">납부조회/취소 </a></li>
+        </ul><!--대학등록금-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">법원업무</li>
+          <li><a href="#!">공탁금 납부</a></li>
+          <li><a href="#!">송달료 납부</a></li>
+          <li><a href="#!">법원/보관금 납부</a></li>
+          <li><a href="#!">집행관보관금 납부</a></li>
+          <li><a href="#!">등기신청수수료 납부</a></li>
+          <li><a href="#!">소송등인지대 납부</a></li>
+          <li><a href="#!">납부내역조회</a></li>
+        </ul><!--법원업무-->
+      </div><!--공과금-->
 
-    <div class="gnb_sub_menu">
-      <ul class="gnb_sub_menu_list">
-        <li class="title">예금</li>
-        <li><a href="#!">예금 상품/가입</a></li>
-        <li><a href="#!">판매중지상품</a></li>
-        <li><a href="#!">예금 조회/해지</a></li>
-        <li><a href="#!">예금관리</a></li>
-        <li><a href="#!">예금 가이드</a></li>
-      </ul><!--예금-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">펀드</li>
-        <li><a href="#!">펀드 상품/가입</a></li>
-        <li><a href="#!">펀드 입금/환매/조회</a></li>
-        <li><a href="#!">펀드 관리</a></li>
-        <li><a href="#!">연금저축펀드</a></li>
-        <li><a href="#!">펀드 투자정보</a></li>
-        <li><a href="#!">연금계좌 가져오기</a></li>
-      </ul><!--펀드-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">대출</li>
-        <li><a href="#!">대출상품/신청</a></li>
-        <li><a href="#!">대출진행현황</a></li>
-        <li><a href="#!">대출관리</a></li>
-        <li><a href="#!">대출가이드</a></li>
-        <li><a href="#!">신용평가 및 여신심사 자료제출</a></li>
-      </ul><!--대출-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">신탁</li>
-        <li><a href="#!">신탁 상품</a></li>
-        <li><a href="#!">신탁 조회/입금/해지</a></li>
-        <li><a href="#!">신탁관리</a></li>
-        <li><a href="#!">신탁관련공시</a></li>
-        <li><a href="#!">스튜어드십코드</a></li>
-        <li><a href="#!">채권상품 안내</a></li>
-        <li><a href="#!">기타 안내사항</a></li>
-      </ul><!--신탁-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">ISA</li>
-        <li><a href="#!">ISA 상품/가입</a></li>
-        <li><a href="#!">ISA 조회/입금</a></li>
-        <li><a href="#!">ISA 해지(일임형)</a></li>
-        <li><a href="#!">ISA 관리</a></li>
-        <li><a href="#!">ISA 가이드</a></li>
-      </ul><!--ISA-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">보험/공제</li>
-        <li><a href="#!">보험조회</a></li>
-        <li><a href="#!">보험 가이드</a></li>
-      </ul><!--보험/공제-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">외화예금</li>
-        <li><a href="#!">외화예금상품/가입</a></li>
-        <li><a href="#!">외화예금 추가입금 </a></li>
-        <li><a href="#!">외화예금 조회/해지 </a></li>
-        <li><a href="#!">외화예금 금리안내 </a></li>
-      </ul><!--외화예금-->
-    </div><!--금융상품-->
+      <div class="gnb_sub_menu">
+        <ul class="gnb_sub_menu_list">
+          <li class="title">예금</li>
+          <li><a href="#!">예금 상품/가입</a></li>
+          <li><a href="#!">판매중지상품</a></li>
+          <li><a href="#!">예금 조회/해지</a></li>
+          <li><a href="#!">예금관리</a></li>
+          <li><a href="#!">예금 가이드</a></li>
+        </ul><!--예금-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">펀드</li>
+          <li><a href="#!">펀드 상품/가입</a></li>
+          <li><a href="#!">펀드 입금/환매/조회</a></li>
+          <li><a href="#!">펀드 관리</a></li>
+          <li><a href="#!">연금저축펀드</a></li>
+          <li><a href="#!">펀드 투자정보</a></li>
+          <li><a href="#!">연금계좌 가져오기</a></li>
+        </ul><!--펀드-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">대출</li>
+          <li><a href="#!">대출상품/신청</a></li>
+          <li><a href="#!">대출진행현황</a></li>
+          <li><a href="#!">대출관리</a></li>
+          <li><a href="#!">대출가이드</a></li>
+          <li><a href="#!">신용평가 및 여신심사 자료제출</a></li>
+        </ul><!--대출-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">신탁</li>
+          <li><a href="#!">신탁 상품</a></li>
+          <li><a href="#!">신탁 조회/입금/해지</a></li>
+          <li><a href="#!">신탁관리</a></li>
+          <li><a href="#!">신탁관련공시</a></li>
+          <li><a href="#!">스튜어드십코드</a></li>
+          <li><a href="#!">채권상품 안내</a></li>
+          <li><a href="#!">기타 안내사항</a></li>
+        </ul><!--신탁-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">ISA</li>
+          <li><a href="#!">ISA 상품/가입</a></li>
+          <li><a href="#!">ISA 조회/입금</a></li>
+          <li><a href="#!">ISA 해지(일임형)</a></li>
+          <li><a href="#!">ISA 관리</a></li>
+          <li><a href="#!">ISA 가이드</a></li>
+        </ul><!--ISA-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">보험/공제</li>
+          <li><a href="#!">보험조회</a></li>
+          <li><a href="#!">보험 가이드</a></li>
+        </ul><!--보험/공제-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">외화예금</li>
+          <li><a href="#!">외화예금상품/가입</a></li>
+          <li><a href="#!">외화예금 추가입금 </a></li>
+          <li><a href="#!">외화예금 조회/해지 </a></li>
+          <li><a href="#!">외화예금 금리안내 </a></li>
+        </ul><!--외화예금-->
+      </div><!--금융상품-->
 
-    <div class="gnb_sub_menu">
-      <ul class="gnb_sub_menu_list">
-        <li class="title">외환정보관리</li>
-        <li><a href="#!">영문정보관리</a></li>
-        <li><a href="#!">외화송금주소록</a></li>
-        <li><a href="#!">외환알림서비스</a></li>
-        <li><a href="#!">거래외국환은행지정</a></li>
-      </ul><!--외환정보관리-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">환율</li>
-        <li><a href="#!">환율조회</a></li>
-        <li><a href="#!">환율동향정보</a></li>
-        <li><a href="#!">환율알림서비스</a></li>
-        <li><a href="#!">환율배너</a></li>
-        <li><a href="#!">환율계산기</a></li>
-      </ul><!--환율-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">환전</li>
-        <li><a href="#!">환전신청</a></li>
-        <li><a href="#!">환전조회/관리</a></li>
-        <li><a href="#!">마일리지 제휴 항공관리</a></li>
-      </ul><!--환전-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">해외송금보내기</li>
-        <li><a href="#!">바로송금</a></li>
-        <li><a href="#!">정기예약송금</a></li>
-        <li><a href="#!">보낸송금내용변경</a></li>
-        <li><a href="#!">보낸송금내역조회</a></li>
-        <li><a href="#!">해외수수료납부/조회</a></li>
-      </ul><!--해외송금보내기-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">해외송금받기</li>
-        <li><a href="#!">받은송금내역조회</a></li>
-        <li><a href="#!">받을송금조회/관리</a></li>
-        <li><a href="#!">외국환매입증명서</a></li>
-        <li><a href="#!">해외송금수취정보</a></li>
-      </ul><!--해외송금받기-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">국내외화이체</li>
-        <li><a href="#!">외화이체/예금입출금</a></li>
-        <li><a href="#!">외화자동이체</a></li>
-        <li><a href="#!">외화이체내역조회</a></li>
-      </ul><!--국내외화이체-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">외화수표</li>
-        <li><a href="#!">외화송금수표보낸내역조회</a></li>
-        <li><a href="#!">외화수표환전내역조회 </a></li>
-        <li><a href="#!">외화수표수수료납부/조회 </a></li>
-      </ul><!--외화수표-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">해외투자</li>
-        <li><a href="#!">해외투자사후보고대상</a></li>
-        <li><a href="#!">해외직접투자안내 </a></li>
-        <li><a href="#!">해외부동산투자안내</a></li>
-      </ul><!--해외투자-->
-    </div><!--외환-->
+      <div class="gnb_sub_menu">
+        <ul class="gnb_sub_menu_list">
+          <li class="title">외환정보관리</li>
+          <li><a href="#!">영문정보관리</a></li>
+          <li><a href="#!">외화송금주소록</a></li>
+          <li><a href="#!">외환알림서비스</a></li>
+          <li><a href="#!">거래외국환은행지정</a></li>
+        </ul><!--외환정보관리-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">환율</li>
+          <li><a href="#!">환율조회</a></li>
+          <li><a href="#!">환율동향정보</a></li>
+          <li><a href="#!">환율알림서비스</a></li>
+          <li><a href="#!">환율배너</a></li>
+          <li><a href="#!">환율계산기</a></li>
+        </ul><!--환율-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">환전</li>
+          <li><a href="#!">환전신청</a></li>
+          <li><a href="#!">환전조회/관리</a></li>
+          <li><a href="#!">마일리지 제휴 항공관리</a></li>
+        </ul><!--환전-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">해외송금보내기</li>
+          <li><a href="#!">바로송금</a></li>
+          <li><a href="#!">정기예약송금</a></li>
+          <li><a href="#!">보낸송금내용변경</a></li>
+          <li><a href="#!">보낸송금내역조회</a></li>
+          <li><a href="#!">해외수수료납부/조회</a></li>
+        </ul><!--해외송금보내기-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">해외송금받기</li>
+          <li><a href="#!">받은송금내역조회</a></li>
+          <li><a href="#!">받을송금조회/관리</a></li>
+          <li><a href="#!">외국환매입증명서</a></li>
+          <li><a href="#!">해외송금수취정보</a></li>
+        </ul><!--해외송금받기-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">국내외화이체</li>
+          <li><a href="#!">외화이체/예금입출금</a></li>
+          <li><a href="#!">외화자동이체</a></li>
+          <li><a href="#!">외화이체내역조회</a></li>
+        </ul><!--국내외화이체-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">외화수표</li>
+          <li><a href="#!">외화송금수표보낸내역조회</a></li>
+          <li><a href="#!">외화수표환전내역조회 </a></li>
+          <li><a href="#!">외화수표수수료납부/조회 </a></li>
+        </ul><!--외화수표-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">해외투자</li>
+          <li><a href="#!">해외투자사후보고대상</a></li>
+          <li><a href="#!">해외직접투자안내 </a></li>
+          <li><a href="#!">해외부동산투자안내</a></li>
+        </ul><!--해외투자-->
+      </div><!--외환-->
 
-    <div class="gnb_sub_menu">
-      <ul class="gnb_sub_menu_list">
-        <li class="title">제증명발급</li>
-        <li><a href="#!">연말정산증명서</a></li>
-        <li><a href="#!">통장사본</a></li>
-        <li><a href="#!">예금잔액증명서</a></li>
-        <li><a href="#!">금융거래확인서</a></li>
-        <li><a href="#!">부채증명서</a></li>
-        <li><a href="#!">증명서재출력</a></li>
-      </ul><!--제증명발급-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">계좌관리</li>
-        <li><a href="#!">출금계좌등록</a></li>
-        <li><a href="#!">계좌비밀번호신규/변경</a></li>
-        <li><a href="#!">빠른조회서비스등록/해지</a></li>
-        <li><a href="#!">계좌숨기기 관리</a></li>
-        <li><a href="#!">자주쓰는계좌 등록/삭제</a></li>
-      </ul><!--계좌관리-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">인터넷 뱅킹관리</li>
-        <li><a href="#!">ID조회/사용자암호설정</a></li>
-        <li><a href="#!">인터넷뱅킹해지 </a></li>
-        <li><a href="#!">입출금 자동통지 서비스</a></li>
-      </ul><!--인터넷 뱅킹관리-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">계좌종합관리서비스</li>
-        <li><a href="#!">계좌종합관리 신청/변경/해지</a></li>
-        <li><a href="#!">계좌종합관리 출금계좌등록</a></li>
+      <div class="gnb_sub_menu">
+        <ul class="gnb_sub_menu_list">
+          <li class="title">제증명발급</li>
+          <li><a href="#!">연말정산증명서</a></li>
+          <li><a href="#!">통장사본</a></li>
+          <li><a href="#!">예금잔액증명서</a></li>
+          <li><a href="#!">금융거래확인서</a></li>
+          <li><a href="#!">부채증명서</a></li>
+          <li><a href="#!">증명서재출력</a></li>
+        </ul><!--제증명발급-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">계좌관리</li>
+          <li><a href="#!">출금계좌등록</a></li>
+          <li><a href="#!">계좌비밀번호신규/변경</a></li>
+          <li><a href="#!">빠른조회서비스등록/해지</a></li>
+          <li><a href="#!">계좌숨기기 관리</a></li>
+          <li><a href="#!">자주쓰는계좌 등록/삭제</a></li>
+        </ul><!--계좌관리-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">인터넷 뱅킹관리</li>
+          <li><a href="#!">ID조회/사용자암호설정</a></li>
+          <li><a href="#!">인터넷뱅킹해지 </a></li>
+          <li><a href="#!">입출금 자동통지 서비스</a></li>
+        </ul><!--인터넷 뱅킹관리-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">계좌종합관리서비스</li>
+          <li><a href="#!">계좌종합관리 신청/변경/해지</a></li>
+          <li><a href="#!">계좌종합관리 출금계좌등록</a></li>
 
-      </ul><!--계좌종합관리서비스-->
-      <ul class="gnb_sub_menu_list">
-        <li class="title">이용안내</li>
-        <li><a href="#!">인터넷뱅킹 FAQ</a></li>
-        <li><a href="#!">이용시간안내</a></li>
-        <li><a href="#!">이용약관 안내</a></li>
-      </ul><!--이용안내-->
-    </div><!--뱅킹관리-->
-  </div>
+        </ul><!--계좌종합관리서비스-->
+        <ul class="gnb_sub_menu_list">
+          <li class="title">이용안내</li>
+          <li><a href="#!">인터넷뱅킹 FAQ</a></li>
+          <li><a href="#!">이용시간안내</a></li>
+          <li><a href="#!">이용약관 안내</a></li>
+        </ul><!--이용안내-->
+      </div><!--뱅킹관리-->
+    </div>
 
   </div><!---header-->
 
-
-
-  <div class="swiper mainSwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="./images/visual_01.png" alt="비주얼1">
-      </div>
-      <div class="swiper-slide">
-        <img src="./images/visual_02.png" alt="비주얼2">
-      </div>
-      <div class="swiper-slide">
-        <img src="./images/visual_03.png" alt="비주얼3">
-      </div>
-      <div class="swiper-slide">
-        <img src="./images/visual_04.png" alt="비주얼4">
-      </div>
-    </div>
-    <!--인디케이터(점)-->
-    <div class="swiper-pagination"></div>
-    <!--화살표-->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div><!--visual_main-->
-
-  <section class="issue_frame">
-    <div class="issue_contents">
-      <div class="tab_area">
-        <p class="issue_title">
-          찾으시는 메뉴가 <br>
-          있으신가요?
-        </p><!--이슈타이틀-->
-        <div class="tab_box">
-          <button type="button" class="new active">처음이에요</button>
-          <button type="button" class="usual">주요서비스</button>
+  <main>
+    <div class="swiper mainSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/visual_01.png" alt="비주얼1">
         </div>
-      </div><!--탭영역-->
-      <div class="issue_card_area card01">
-        <div class="issue_card">
-          <div class="icon_img">
-            <img src="./images/issue_01.png" alt="이슈아이콘1">
-          </div>
-          <div class="issue_txt_box">
-            <p class="issue_menu_title">계좌개설</p>
-            <p class="issue_menu_info">신규계좌를 개설 할 수 있어요</p>
-          </div>
-        </div><!--card01-->
-        <div class="issue_card">
-          <div class="icon_img">
-            <img src="./images/issue_02.png" alt="이슈아이콘2">
-          </div>
-          <div class="issue_txt_box">
-            <p class="issue_menu_title">ID등록</p>
-            <p class="issue_menu_info">ID 등록 후 <br> 거래가 가능해요</p>
-          </div>
-        </div><!--card02-->
-        <div class="issue_card">
-          <div class="icon_img">
-            <img src="./images/issue_03.png" alt="이슈아이콘3">
-          </div>
-          <div class="issue_txt_box">
-            <p class="issue_menu_title">인증서 발급</p>
-            <p class="issue_menu_info">간편하고 안전하게 거래하세요</p>
-          </div>
-        </div><!--card03-->
-        <div class="issue_card">
-          <div class="icon_img">
-            <img src="./images/issue_04.png" alt="이슈아이콘4">
-          </div>
-          <div class="issue_txt_box">
-            <p class="issue_menu_title">인증서 다운로드</p>
-            <p class="issue_menu_info">기존 인증서를 다운로드 할 수 있어요</p>
-          </div>
-        </div><!--card04-->
-        <div class="issue_card">
-          <div class="icon_img">
-            <img src="./images/issue_01.png" alt="이슈아이콘1">
-          </div>
-          <div class="issue_txt_box">
-            <p class="issue_menu_title">챗봇</p>
-            <p class="issue_menu_info">궁금한 점을 쉽게 문의 할 수 있어요</p>
-          </div>
-        </div><!--card05-->
-      </div>
-      <div class="issue_card_area card02">
-        <div class="issue_card">
-          <div class="icon_img">
-            <img src="./images/issue_06.png" alt="이슈아이콘6">
-          </div>
-          <div class="issue_txt_box">
-            <p class="issue_menu_title">나의 자산</p>
-            <p class="issue_menu_info">자산 현황을 <br> 조회 할 수 있어요</p>
-          </div>
-        </div><!--card06-->
-        <div class="issue_card">
-          <div class="icon_img">
-            <img src="./images/issue_07.png" alt="이슈아이콘7">
-          </div>
-          <div class="issue_txt_box">
-            <p class="issue_menu_title">잔고</p>
-            <p class="issue_menu_info">계좌별 잔고내역을 <br> 조회 할 수 있어요</p>
-          </div>
-        </div><!--card07-->
-        <div class="issue_card">
-          <div class="icon_img">
-            <img src="./images/issue_08.png" alt="이슈아이콘8">
-          </div>
-          <div class="issue_txt_box">
-            <p class="issue_menu_title">이체</p>
-            <p class="issue_menu_info">즉시/예약이체를 할 수 있어요</p>
-          </div>
-        </div><!--card08-->
-        <div class="issue_card">
-          <div class="icon_img">
-            <img src="./images/issue_09.png" alt="이슈아이콘9">
-          </div>
-          <div class="issue_txt_box">
-            <p class="issue_menu_title">거래내역</p>
-            <p class="issue_menu_info">계좌별 거래 내역을 <br> 조회할 수 있어요</p>
-          </div>
-        </div><!--card09-->
-        <div class="issue_card">
-          <div class="icon_img">
-            <img src="./images/issue_10.png" alt="이슈아이콘10">
-          </div>
-          <div class="issue_txt_box">
-            <p class="issue_menu_title">환전</p>
-            <p class="issue_menu_info">실시간 환전 및 내역<br> 조회를 할 수 있어요</p>
-          </div>
-        </div><!--card10-->
-      </div>
-    </div>
-  </section><!--이슈콘텐츠-->
-
-  <div class="wrap">
-    <section class="bp_area">
-      <div class="title_box">
-        <p class="sub_title">
-          신한은행 금융상품
-        </p>
-        <p class="detail">
-          <a href="#">
-            더보기 +
-          </a>
-        </p>
-      </div>
-      <ul class="bp_card_list">
-        <li class="bp_card_item">
-          <a href="#">
-            <div class="bp_img_box">
-              <img src="./images/bP_01.png" alt="상품01">
-            </div>
-            <p class="bp_title">예금/신탁</p>
-          </a>
-        </li><!--bp01-->
-        <li class="bp_card_item">
-          <a href="#">
-            <div class="bp_img_box">
-              <img src="./images/bP_02.png" alt="상품02">
-            </div>
-            <p class="bp_title">펀드</p>
-          </a>
-        </li><!--bp02-->
-        <li class="bp_card_item">
-          <a href="#">
-            <div class="bp_img_box">
-              <img src="./images/bP_03.png" alt="상품03">
-            </div>
-            <p class="bp_title">대출</p>
-          </a>
-        </li><!--bp03-->
-        <li class="bp_card_item">
-          <a href="#">
-            <div class="bp_img_box">
-              <img src="./images/bP_04.png" alt="상품04">
-            </div>
-            <p class="bp_title">외환</p>
-          </a>
-        </li><!--bp04-->
-        <li class="bp_card_item">
-          <a href="#">
-            <div class="bp_img_box">
-              <img src="./images/bP_05.png" alt="상품05">
-            </div>
-            <p class="bp_title">골드/실버</p>
-          </a>
-        </li><!--bp05-->
-        <li class="bp_card_item">
-          <a href="#">
-            <div class="bp_img_box">
-              <img src="./images/bP_06.png" alt="상품06">
-            </div>
-            <p class="bp_title">퇴직연금</p>
-          </a>
-        </li><!--bp06-->
-      </ul>
-    </section><!--신한은행 금융상품-->
-
-    <section class="reco_pb_area">
-      <div class="title_box">
-        <p class="sub_title">
-          신한은행 추천상품
-        </p>
-        <p class="detail">
-          <a href="#">
-            더보기 +
-          </a>
-        </p>
-      </div><!--컨텐츠 타이틀-->
-      <ul class="reco_pb_list">
-        <li class="reco_pb_item bg01">
-          <a href="#">
-            <div class="reco_txt_box">
-              <p class="reco_title01">
-                예금
-              </p>
-              <p class="reco_title02">
-                SOL 모임 통장
-              </p>
-              <P class="reco_info">
-                쉽게 참여하고 함께 관리하는 <br> 모임 전용 통장
-              </P>
-            </div>
-            <div class="reco_img_box">
-              <img src="./images/reco01.png" alt="추천01">
-            </div>
-          </a>
-        </li><!--reco_pb_01-->
-        <li class="reco_pb_item bg02">
-          <a href="#">
-            <div class="reco_txt_box">
-              <p class="reco_title01">
-                예금
-              </p>
-              <p class="reco_title02">
-                신한 스마트 적금
-              </p>
-              <P class="reco_info">
-                복잡한 우대금리 조건이 없는 <br> 스마트폰 전용 적금
-              </P>
-            </div>
-            <div class="reco_img_box">
-              <img src="./images/reco02.png" alt="추천02">
-            </div>
-          </a>
-        </li><!--reco_pb_02-->
-        <li class="reco_pb_item bg01">
-          <a href="#">
-            <div class="reco_txt_box">
-              <p class="reco_title01">
-                대출
-              </p>
-              <p class="reco_title02">
-                신한 MY CAR대출
-              </p>
-              <P class="reco_info">
-                자동차 구입시 은행 방문없이 <br> 대출 실행까지 되는 자동차 대출
-              </P>
-            </div>
-            <div class="reco_img_box">
-              <img src="./images/reco03.png" alt="추천04">
-            </div>
-          </a>
-        </li><!--reco_pb_03-->
-        <li class="reco_pb_item bg03">
-          <a href="#">
-            <div class="reco_txt_box">
-              <p class="reco_title01">
-                골드/실버
-              </p>
-              <p class="reco_title02">
-                신한골드리슈골드테크
-              </p>
-              <P class="reco_info">
-                금의 입출금 거래가 <br> 자유로운 대표 골드상품
-              </P>
-            </div>
-            <div class="reco_img_box">
-              <img src="./images/reco04.png" alt="추천04">
-            </div>
-          </a>
-        </li><!--reco_pb_04-->
-      </ul>
-    </section><!--신한은행 추천상품-->
-
-    <section class="event_area">
-      <div class="title_box">
-        <p class="sub_title">
-          이벤트
-        </p>
-        <p class="detail">
-          <a href="#">
-            더보기 +
-          </a>
-        </p>
-      </div><!--컨텐츠 타이틀-->
-      <div class="swiper eventswiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./images/event_01.png" alt="이벤트배너1">
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/event_02.png" alt="비주얼2">
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/event_03.png" alt="비주얼3">
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/event_04.png" alt="비주얼4">
-          </div>
+        <div class="swiper-slide">
+          <img src="./images/visual_02.png" alt="비주얼2">
         </div>
-        <!--인디케이터(점)-->
-        <div class="swiper-pagination"></div>
-        <!--화살표-->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div><!--visual_main-->
-    </section><!--이벤트-->
-  </div>
+        <div class="swiper-slide">
+          <img src="./images/visual_03.png" alt="비주얼3">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/visual_04.png" alt="비주얼4">
+        </div>
+      </div>
+      <!--인디케이터(점)-->
+      <div class="swiper-pagination"></div>
+      <!--화살표-->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div><!--visual_main-->
 
-  <section class="notice_area">
-    <div class="notice_frame">
-      <div class="notice_box01">
+    <section class="issue_frame">
+      <div class="issue_contents">
+        <div class="tab_area">
+          <p class="issue_title">
+            찾으시는 메뉴가 <br>
+            있으신가요?
+          </p><!--이슈타이틀-->
+          <div class="tab_box">
+            <button type="button" class="new active">처음이에요</button>
+            <button type="button" class="usual">주요서비스</button>
+          </div>
+        </div><!--탭영역-->
+        <div class="issue_card_area card01">
+          <div class="issue_card">
+            <div class="icon_img">
+              <img src="./images/issue_01.png" alt="이슈아이콘1">
+            </div>
+            <div class="issue_txt_box">
+              <p class="issue_menu_title">계좌개설</p>
+              <p class="issue_menu_info">신규계좌를 개설 할 수 있어요</p>
+            </div>
+          </div><!--card01-->
+          <div class="issue_card">
+            <div class="icon_img">
+              <img src="./images/issue_02.png" alt="이슈아이콘2">
+            </div>
+            <div class="issue_txt_box">
+              <p class="issue_menu_title">ID등록</p>
+              <p class="issue_menu_info">ID 등록 후 <br> 거래가 가능해요</p>
+            </div>
+          </div><!--card02-->
+          <div class="issue_card">
+            <div class="icon_img">
+              <img src="./images/issue_03.png" alt="이슈아이콘3">
+            </div>
+            <div class="issue_txt_box">
+              <p class="issue_menu_title">인증서 발급</p>
+              <p class="issue_menu_info">간편하고 안전하게 거래하세요</p>
+            </div>
+          </div><!--card03-->
+          <div class="issue_card">
+            <div class="icon_img">
+              <img src="./images/issue_04.png" alt="이슈아이콘4">
+            </div>
+            <div class="issue_txt_box">
+              <p class="issue_menu_title">인증서 다운로드</p>
+              <p class="issue_menu_info">기존 인증서를 다운로드 할 수 있어요</p>
+            </div>
+          </div><!--card04-->
+          <div class="issue_card">
+            <div class="icon_img">
+              <img src="./images/issue_01.png" alt="이슈아이콘1">
+            </div>
+            <div class="issue_txt_box">
+              <p class="issue_menu_title">챗봇</p>
+              <p class="issue_menu_info">궁금한 점을 쉽게 문의 할 수 있어요</p>
+            </div>
+          </div><!--card05-->
+        </div>
+        <div class="issue_card_area card02">
+          <div class="issue_card">
+            <div class="icon_img">
+              <img src="./images/issue_06.png" alt="이슈아이콘6">
+            </div>
+            <div class="issue_txt_box">
+              <p class="issue_menu_title">나의 자산</p>
+              <p class="issue_menu_info">자산 현황을 <br> 조회 할 수 있어요</p>
+            </div>
+          </div><!--card06-->
+          <div class="issue_card">
+            <div class="icon_img">
+              <img src="./images/issue_07.png" alt="이슈아이콘7">
+            </div>
+            <div class="issue_txt_box">
+              <p class="issue_menu_title">잔고</p>
+              <p class="issue_menu_info">계좌별 잔고내역을 <br> 조회 할 수 있어요</p>
+            </div>
+          </div><!--card07-->
+          <div class="issue_card">
+            <div class="icon_img">
+              <img src="./images/issue_08.png" alt="이슈아이콘8">
+            </div>
+            <div class="issue_txt_box">
+              <p class="issue_menu_title">이체</p>
+              <p class="issue_menu_info">즉시/예약이체를 할 수 있어요</p>
+            </div>
+          </div><!--card08-->
+          <div class="issue_card">
+            <div class="icon_img">
+              <img src="./images/issue_09.png" alt="이슈아이콘9">
+            </div>
+            <div class="issue_txt_box">
+              <p class="issue_menu_title">거래내역</p>
+              <p class="issue_menu_info">계좌별 거래 내역을 <br> 조회할 수 있어요</p>
+            </div>
+          </div><!--card09-->
+          <div class="issue_card">
+            <div class="icon_img">
+              <img src="./images/issue_10.png" alt="이슈아이콘10">
+            </div>
+            <div class="issue_txt_box">
+              <p class="issue_menu_title">환전</p>
+              <p class="issue_menu_info">실시간 환전 및 내역<br> 조회를 할 수 있어요</p>
+            </div>
+          </div><!--card10-->
+        </div>
+      </div>
+    </section><!--이슈콘텐츠-->
+
+    <div class="wrap">
+      <section class="bp_area">
         <div class="title_box">
           <p class="sub_title">
-            공지사항
+            신한은행 금융상품
+          </p>
+          <p class="detail">
+            <a href="#">
+              더보기 +
+            </a>
+          </p>
+        </div>
+        <ul class="bp_card_list">
+          <li class="bp_card_item">
+            <a href="#">
+              <div class="bp_img_box">
+                <img src="./images/bP_01.png" alt="상품01">
+              </div>
+              <p class="bp_title">예금/신탁</p>
+            </a>
+          </li><!--bp01-->
+          <li class="bp_card_item">
+            <a href="#">
+              <div class="bp_img_box">
+                <img src="./images/bP_02.png" alt="상품02">
+              </div>
+              <p class="bp_title">펀드</p>
+            </a>
+          </li><!--bp02-->
+          <li class="bp_card_item">
+            <a href="#">
+              <div class="bp_img_box">
+                <img src="./images/bP_03.png" alt="상품03">
+              </div>
+              <p class="bp_title">대출</p>
+            </a>
+          </li><!--bp03-->
+          <li class="bp_card_item">
+            <a href="#">
+              <div class="bp_img_box">
+                <img src="./images/bP_04.png" alt="상품04">
+              </div>
+              <p class="bp_title">외환</p>
+            </a>
+          </li><!--bp04-->
+          <li class="bp_card_item">
+            <a href="#">
+              <div class="bp_img_box">
+                <img src="./images/bP_05.png" alt="상품05">
+              </div>
+              <p class="bp_title">골드/실버</p>
+            </a>
+          </li><!--bp05-->
+          <li class="bp_card_item">
+            <a href="#">
+              <div class="bp_img_box">
+                <img src="./images/bP_06.png" alt="상품06">
+              </div>
+              <p class="bp_title">퇴직연금</p>
+            </a>
+          </li><!--bp06-->
+        </ul>
+      </section><!--신한은행 금융상품-->
+
+      <section class="reco_pb_area">
+        <div class="title_box">
+          <p class="sub_title">
+            신한은행 추천상품
           </p>
           <p class="detail">
             <a href="#">
@@ -681,120 +558,246 @@
             </a>
           </p>
         </div><!--컨텐츠 타이틀-->
+        <ul class="reco_pb_list">
+          <li class="reco_pb_item bg01">
+            <a href="#">
+              <div class="reco_txt_box">
+                <p class="reco_title01">
+                  예금
+                </p>
+                <p class="reco_title02">
+                  SOL 모임 통장
+                </p>
+                <P class="reco_info">
+                  쉽게 참여하고 함께 관리하는 <br> 모임 전용 통장
+                </P>
+              </div>
+              <div class="reco_img_box">
+                <img src="./images/reco01.png" alt="추천01">
+              </div>
+            </a>
+          </li><!--reco_pb_01-->
+          <li class="reco_pb_item bg02">
+            <a href="#">
+              <div class="reco_txt_box">
+                <p class="reco_title01">
+                  예금
+                </p>
+                <p class="reco_title02">
+                  신한 스마트 적금
+                </p>
+                <P class="reco_info">
+                  복잡한 우대금리 조건이 없는 <br> 스마트폰 전용 적금
+                </P>
+              </div>
+              <div class="reco_img_box">
+                <img src="./images/reco02.png" alt="추천02">
+              </div>
+            </a>
+          </li><!--reco_pb_02-->
+          <li class="reco_pb_item bg01">
+            <a href="#">
+              <div class="reco_txt_box">
+                <p class="reco_title01">
+                  대출
+                </p>
+                <p class="reco_title02">
+                  신한 MY CAR대출
+                </p>
+                <P class="reco_info">
+                  자동차 구입시 은행 방문없이 <br> 대출 실행까지 되는 자동차 대출
+                </P>
+              </div>
+              <div class="reco_img_box">
+                <img src="./images/reco03.png" alt="추천04">
+              </div>
+            </a>
+          </li><!--reco_pb_03-->
+          <li class="reco_pb_item bg03">
+            <a href="#">
+              <div class="reco_txt_box">
+                <p class="reco_title01">
+                  골드/실버
+                </p>
+                <p class="reco_title02">
+                  신한골드리슈골드테크
+                </p>
+                <P class="reco_info">
+                  금의 입출금 거래가 <br> 자유로운 대표 골드상품
+                </P>
+              </div>
+              <div class="reco_img_box">
+                <img src="./images/reco04.png" alt="추천04">
+              </div>
+            </a>
+          </li><!--reco_pb_04-->
+        </ul>
+      </section><!--신한은행 추천상품-->
 
-        <ul class="notice_list">
-          <li>
+      <section class="event_area">
+        <div class="title_box">
+          <p class="sub_title">
+            이벤트
+          </p>
+          <p class="detail">
             <a href="#">
-              <p class="notice_title">
-                코스콤 인증시스템 정기점검 관련 안내
-              </p>
-              <p class="notice_date">
-                2026-01-16
-              </p>
+              더보기 +
             </a>
-          </li><!--공지사항1-->
-          <li>
-            <a href="#">
-              <p class="notice_title">
-                도이치은행, 산업은행, 비엔피피리바은행, 우리투자증권 전자금융공동망 업무 일시중단 안내
-              </p>
-              <p class="notice_date">
-                2026-01-09
-              </p>
-            </a>
-          </li><!--공지사항2-->
-          <li>
-            <a href="#">
-              <p class="notice_title">
-                휴면예금 출연 전 고객 안내
-              </p>
-              <p class="notice_date">
-                2026-01-08
-              </p>
-            </a>
-          </li><!--공지사항3-->
-          <li>
-            <a href="#">
-              <p class="notice_title">
-                소액 휴면예금 일괄 환급 안내(2차)
-              </p>
-              <p class="notice_date">
-                2026-01-08
-              </p>
-            </a>
-          </li><!--공지사항4-->
-          <li>
-            <a href="#">
-              <p class="notice_title">
-                소액 휴면예금 일괄 환급 안내
-              </p>
-              <p class="notice_date">
-                2026-01-07
-              </p>
-            </a>
-          </li><!--공지사항5-->
-        </ul>
-      </div>
-      <div class="notice_box02">
-        <div class="tab_box">
-          <button type="button" class="notice1 active">금융사고예방</button>
-          <button type="button" class="notice2">소비자권익보호</button>
-        </div>
-        <ul class="notice_list">
-          <li>
-            <a href="#">
-              <p class="notice_title">
-                ‘상장시 대박’ 이라며 비상장주식 매수를 권유한다면? 사기부터 의심!
-              </p>
-              <p class="notice_date">
-                2026-01-16
-              </p>
-            </a>
-          </li><!--공지사항1-->
-          <li>
-            <a href="#">
-              <p class="notice_title">
-                달러보험 가입시 소비자 핵심 유의사항 및 주요 민원사례
-              </p>
-              <p class="notice_date">
-                2026-01-09
-              </p>
-            </a>
-          </li><!--공지사항2-->
-          <li>
-            <a href="#">
-              <p class="notice_title">
-                쿠팡 개인정보 유출사고를 빙자한 피해사례가 확인됨에 따른 소비
-              </p>
-              <p class="notice_date">
-                2026-01-08
-              </p>
-            </a>
-          </li><!--공지사항3-->
-          <li>
-            <a href="#">
-              <p class="notice_title">
-                쿠팡 개인정보 유출사고에 따른 보이스피싱/스미싱 등 피해에 주의하세요
-              </p>
-              <p class="notice_date">
-                2026-01-08
-              </p>
-            </a>
-          </li><!--공지사항4-->
-          <li>
-            <a href="#">
-              <p class="notice_title">
-                누군가 해외주식 투자를 미끼로 당신의 재산을 노리고 있습니다!
-              </p>
-              <p class="notice_date">
-                2026-01-07
-              </p>
-            </a>
-          </li><!--공지사항5-->
-        </ul>
-      </div>
+          </p>
+        </div><!--컨텐츠 타이틀-->
+        <div class="swiper eventswiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/event_01.png" alt="이벤트배너1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/event_02.png" alt="비주얼2">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/event_03.png" alt="비주얼3">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/event_04.png" alt="비주얼4">
+            </div>
+          </div>
+          <!--인디케이터(점)-->
+          <div class="swiper-pagination"></div>
+          <!--화살표-->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div><!--visual_main-->
+      </section><!--이벤트-->
     </div>
-  </section><!--공지사항-->
+
+    <section class="notice_area">
+      <div class="notice_frame">
+        <div class="notice_box01">
+          <div class="title_box">
+            <p class="sub_title">
+              공지사항
+            </p>
+            <p class="detail">
+              <a href="#">
+                더보기 +
+              </a>
+            </p>
+          </div><!--컨텐츠 타이틀-->
+
+          <ul class="notice_list">
+            <li>
+              <a href="#">
+                <p class="notice_title">
+                  코스콤 인증시스템 정기점검 관련 안내
+                </p>
+                <p class="notice_date">
+                  2026-01-16
+                </p>
+              </a>
+            </li><!--공지사항1-->
+            <li>
+              <a href="#">
+                <p class="notice_title">
+                  도이치은행, 산업은행, 비엔피피리바은행, 우리투자증권 전자금융공동망 업무 일시중단 안내
+                </p>
+                <p class="notice_date">
+                  2026-01-09
+                </p>
+              </a>
+            </li><!--공지사항2-->
+            <li>
+              <a href="#">
+                <p class="notice_title">
+                  휴면예금 출연 전 고객 안내
+                </p>
+                <p class="notice_date">
+                  2026-01-08
+                </p>
+              </a>
+            </li><!--공지사항3-->
+            <li>
+              <a href="#">
+                <p class="notice_title">
+                  소액 휴면예금 일괄 환급 안내(2차)
+                </p>
+                <p class="notice_date">
+                  2026-01-08
+                </p>
+              </a>
+            </li><!--공지사항4-->
+            <li>
+              <a href="#">
+                <p class="notice_title">
+                  소액 휴면예금 일괄 환급 안내
+                </p>
+                <p class="notice_date">
+                  2026-01-07
+                </p>
+              </a>
+            </li><!--공지사항5-->
+          </ul>
+        </div>
+        <div class="notice_box02">
+          <div class="tab_box">
+            <button type="button" class="notice1 active">금융사고예방</button>
+            <button type="button" class="notice2">소비자권익보호</button>
+          </div>
+          <ul class="notice_list">
+            <li>
+              <a href="#">
+                <p class="notice_title">
+                  ‘상장시 대박’ 이라며 비상장주식 매수를 권유한다면? 사기부터 의심!
+                </p>
+                <p class="notice_date">
+                  2026-01-16
+                </p>
+              </a>
+            </li><!--공지사항1-->
+            <li>
+              <a href="#">
+                <p class="notice_title">
+                  달러보험 가입시 소비자 핵심 유의사항 및 주요 민원사례
+                </p>
+                <p class="notice_date">
+                  2026-01-09
+                </p>
+              </a>
+            </li><!--공지사항2-->
+            <li>
+              <a href="#">
+                <p class="notice_title">
+                  쿠팡 개인정보 유출사고를 빙자한 피해사례가 확인됨에 따른 소비
+                </p>
+                <p class="notice_date">
+                  2026-01-08
+                </p>
+              </a>
+            </li><!--공지사항3-->
+            <li>
+              <a href="#">
+                <p class="notice_title">
+                  쿠팡 개인정보 유출사고에 따른 보이스피싱/스미싱 등 피해에 주의하세요
+                </p>
+                <p class="notice_date">
+                  2026-01-08
+                </p>
+              </a>
+            </li><!--공지사항4-->
+            <li>
+              <a href="#">
+                <p class="notice_title">
+                  누군가 해외주식 투자를 미끼로 당신의 재산을 노리고 있습니다!
+                </p>
+                <p class="notice_date">
+                  2026-01-07
+                </p>
+              </a>
+            </li><!--공지사항5-->
+          </ul>
+        </div>
+      </div>
+    </section><!--공지사항-->
+  </main>
+
 
   <div class="footer_top_outer">
     <div class="footer_top">
